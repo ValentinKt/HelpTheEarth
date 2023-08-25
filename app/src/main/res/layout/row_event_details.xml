@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="eventDetailsRowModel" type="com.seeeeshtheearth.app.modules.eventdetails.data.model.EventDetailsRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowbag"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <ImageButton
+            android:background="@drawable/rectangle_bg_indigo_a200_63_radius_12"
+            android:id="@+id/btnBag"
+            android:layout_height="@dimen/_48pxh"
+            android:layout_marginTop="@dimen/_5pxv"
+            android:layout_width="@dimen/_48pxh"
+            android:paddingHorizontal="@dimen/_11pxh"
+            android:paddingVertical="@dimen/_11pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_bag_indigo_a200" tools:ignore="ContentDescription"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnbeliever"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_weight="0.75" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtBeliever"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_3pxh"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_5pxh"
+                android:singleLine="true"
+                android:text="@{eventDetailsRowModel.txtBeliever}"
+                style="@style/txtAirbnbCerealAppmedium16_2" tools:text="@string/msg_14_december_20"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDuration"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{eventDetailsRowModel.txtDuration}"
+                style="@style/txtAirbnbCerealAppbook12_1" tools:text="@string/msg_tuesday_4_00pm"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

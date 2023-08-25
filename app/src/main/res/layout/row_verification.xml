@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="verificationRowModel" type="com.seeeeshtheearth.app.modules.verification.data.model.VerificationRowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnone"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_3">
+        <TextView android:ellipsize="end" android:id="@+id/txtOneOne"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_47pxh"
+            android:layout_marginStart="@dimen/_47pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_width="wrap_content"
+            android:letterSpacing="0.01" android:singleLine="true"
+            android:text="@{verificationRowModel.txtOneOne}"
+            style="@style/txtSFProDisplayregular25" tools:text="@string/lbl_4"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtABCTwo"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_4pxv"
+            android:layout_marginEnd="@dimen/_47pxh"
+            android:layout_marginStart="@dimen/_47pxh"
+            android:layout_width="wrap_content"
+            android:letterSpacing="0.1" android:singleLine="true"
+            android:text="@{verificationRowModel.txtABCTwo}"
+            style="@style/txtSFProTextbold10" tools:text="@string/lbl_ghi"/>
+    </LinearLayout>
+</layout>

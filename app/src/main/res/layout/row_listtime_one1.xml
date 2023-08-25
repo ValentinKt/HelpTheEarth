@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listtimeOne1RowModel" type="com.seeeeshtheearth.app.modules.organizerprofileevent.data.model.ListtimeOne1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearCard"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_6">
+        <FrameLayout android:id="@+id/frameMothersDay"
+            android:layout_height="@dimen/_92pxv"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="@dimen/_79pxh" style="@style/groupStyleorange_200cornerRadius">
+            <ImageView android:id="@+id/imageImageEightyFour"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_92pxh"
+                android:layout_width="@dimen/_79pxh"
+                android:scaleType="fitXY"
+                cornerRadius="@{@dimen/_10pxh}"
+                imageRes="@{@drawable/img_image84}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image84"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumntime"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_19pxv"
+            android:layout_marginEnd="@dimen/_56pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_weight="0.67" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTimeOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listtimeOne1RowModel.txtTimeOne}"
+                android:textAllCaps="true"
+                style="@style/txtAirbnbCerealAppmedium12_1" tools:text="@string/msg_1st_may_sat"/>
+            <TextView android:id="@+id/txtLanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_7pxh"
+                android:text="@{listtimeOne1RowModel.txtLanguage}"
+                style="@style/txtAirbnbCerealAppmedium18_6" tools:text="@string/msg_jo_malone_londo3"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

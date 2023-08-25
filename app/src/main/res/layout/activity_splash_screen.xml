@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splashScreenVM" type="com.seeeeshtheearth.app.modules.splashscreen.data.viewmodel.SplashScreenVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnellipsesixtynine"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="end"
+            android:id="@+id/linearSplashScreen"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <ImageView android:id="@+id/imageEllipseSixtyNine"
+                android:layout_height="@dimen/_61pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="@dimen/_188pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_ellipse69}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse69"/>
+            <LinearLayout android:gravity="center_vertical"
+                android:id="@+id/linearRowcheckmark"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_272pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageCheckmark"
+                    android:layout_height="@dimen/_50pxh"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_width="@dimen/_47pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_checkmark"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_checkmark"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtVentHub"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_weight="0.8"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{splashScreenVM.splashScreenModel.txtVentHub}"
+                    style="@style/txtGilroysemibold45" tools:text="@string/lbl_venthub"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowellipseseventyone"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_55pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageEllipseSeventyOne"
+                    android:layout_height="@dimen/_225pxh"
+                    android:layout_marginTop="@dimen/_153pxv"
+                    android:layout_width="@dimen/_133pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_ellipse71}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse71"/>
+                <ImageView android:id="@+id/imageEllipseSeventy"
+                    android:layout_height="@dimen/_322pxh"
+                    android:layout_marginBottom="@dimen/_56pxv"
+                    android:layout_marginStart="@dimen/_160pxh"
+                    android:layout_width="@dimen/_81pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_ellipse70}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse70"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

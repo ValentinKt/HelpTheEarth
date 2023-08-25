@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="mapViewVM" type="com.seeeeshtheearth.app.modules.mapview.data.viewmodel.MapViewVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearMapView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <FrameLayout android:gravity="start"
+            android:id="@+id/frameStackgroup18499"
+            android:layout_height="match_parent" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageImageTwentyThree"
+                android:layout_gravity="start"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_image23}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image23"/>
+            <LinearLayout android:id="@+id/linearColumnvolume"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <HorizontalScrollView android:fillViewport="true"
+                    android:gravity="start"
+                    android:id="@+id/horizontalScrollHorizontalscrollgroup18499"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:scrollbars="none">
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearColumngroup18499"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical" style="@style/groupStyle_2">
+                        <androidx.appcompat.widget.Toolbar
+                            android:gravity="center_horizontal"
+                            android:id="@+id/toolbarToolbar"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_25pxh"
+                            android:layout_marginStart="@dimen/_25pxh"
+                            android:layout_marginTop="@dimen/_25pxv"
+                            android:layout_width="match_parent" app:contentInsetStart="0dp">
+                            <LinearLayout
+                                android:id="@+id/linearRowgroup18499"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent" android:orientation="horizontal">
+                                <EditText
+                                    android:background="@drawable/rectangle_bg_white_a700_border_gray_200_radius_12"
+                                    android:drawablePadding="@dimen/_22pxh"
+                                    android:drawableStart="@drawable/img_arrowleft_gray_904"
+                                    android:ellipsize="end"
+                                    android:hint="@string/msg_find_for_food_o"
+                                    android:id="@+id/etGroup18499"
+                                    android:inputType="text"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.84"
+                                    android:layout_width="0dp"
+                                    android:paddingBottom="@dimen/_17pxv"
+                                    android:paddingEnd="@dimen/_30pxh"
+                                    android:paddingStart="@dimen/_17pxh"
+                                    android:paddingTop="@dimen/_14pxv"
+                                    android:singleLine="true"
+                                    android:text="@={mapViewVM.mapViewModel.etGroup18499Value}"
+                                    android:textColorHint="@color/bluegray_600_7f"
+                                    style="@style/etSolidRoundedOutline_1" tools:ignore="Autofill"/>
+                                <ImageButton
+                                    android:background="@drawable/rectangle_bg_white_a700_border_gray_200_radius_12"
+                                    android:id="@+id/btnSettings"
+                                    android:layout_height="@dimen/_51pxh"
+                                    android:layout_marginStart="@dimen/_12pxh"
+                                    android:layout_width="@dimen/_51pxh"
+                                    android:paddingHorizontal="@dimen/_14pxh"
+                                    android:paddingVertical="@dimen/_14pxv"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/img_settings_indigo_a200" tools:ignore="ContentDescription"/>
+                            </LinearLayout>
+                        </androidx.appcompat.widget.Toolbar>
+                        <LinearLayout android:gravity="end"
+                            android:id="@+id/linearRowglobe"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_45pxv"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_20pxv"
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal" style="@style/groupStylecornerRadius_3">
+                            <LinearLayout android:id="@+id/linearTab"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.27"
+                                android:layout_width="0dp"
+                                android:orientation="horizontal" style="@style/groupStylewhite_4">
+                                <ImageView android:id="@+id/imageGlobe"
+                                    android:layout_height="@dimen/_19pxh"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_marginStart="@dimen/_13pxh"
+                                    android:layout_marginTop="@dimen/_10pxv"
+                                    android:layout_width="@dimen/_19pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_globe_red_404"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_globe_red_404"/>
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtSports"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_7pxv"
+                                    android:layout_marginEnd="@dimen/_13pxh"
+                                    android:layout_marginStart="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_10pxv"
+                                    android:layout_weight="0.72"
+                                    android:layout_width="0dp"
+                                    android:lineSpacingExtra="@dimen/_6pxh"
+                                    android:singleLine="true"
+                                    android:text="@{mapViewVM.mapViewModel.txtSports}"
+                                    style="@style/txtAirbnbCerealAppbook16_2" tools:text="@string/lbl_sports"/>
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/linearTab1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10pxh"
+                                android:layout_weight="0.25"
+                                android:layout_width="0dp"
+                                android:orientation="horizontal" style="@style/groupStylewhite_4">
+                                <ImageView android:id="@+id/imageMusic"
+                                    android:layout_height="@dimen/_19pxh"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_marginStart="@dimen/_13pxh"
+                                    android:layout_marginTop="@dimen/_9pxv"
+                                    android:layout_width="@dimen/_18pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_music_indigo_a210"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_music_indigo_a210"/>
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtSportsOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_8pxv"
+                                    android:layout_marginEnd="@dimen/_13pxh"
+                                    android:layout_marginStart="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_9pxv"
+                                    android:layout_weight="0.71"
+                                    android:layout_width="0dp"
+                                    android:lineSpacingExtra="@dimen/_6pxh"
+                                    android:singleLine="true"
+                                    android:text="@{mapViewVM.mapViewModel.txtSportsOne}"
+                                    style="@style/txtAirbnbCerealAppbook16_2" tools:text="@string/lbl_music"/>
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/linearTab2"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10pxh"
+                                android:layout_weight="0.24"
+                                android:layout_width="0dp"
+                                android:orientation="horizontal" style="@style/groupStylewhite_4">
+                                <ImageView android:id="@+id/imageCar"
+                                    android:layout_height="@dimen/_19pxh"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_marginStart="@dimen/_13pxh"
+                                    android:layout_marginTop="@dimen/_10pxv"
+                                    android:layout_width="@dimen/_19pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_car"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_car"/>
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtSportsTwo"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_9pxv"
+                                    android:layout_marginEnd="@dimen/_13pxh"
+                                    android:layout_marginStart="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_8pxv"
+                                    android:layout_weight="0.67"
+                                    android:layout_width="0dp"
+                                    android:lineSpacingExtra="@dimen/_6pxh"
+                                    android:singleLine="true"
+                                    android:text="@{mapViewVM.mapViewModel.txtSportsTwo}"
+                                    style="@style/txtAirbnbCerealAppbook16_2" tools:text="@string/lbl_food"/>
+                            </LinearLayout>
+                            <LinearLayout android:id="@+id/linearTab3"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10pxh"
+                                android:layout_weight="0.24"
+                                android:layout_width="0dp"
+                                android:orientation="horizontal" style="@style/groupStylewhite_4">
+                                <ImageView android:id="@+id/imageFire"
+                                    android:layout_height="@dimen/_19pxh"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_marginStart="@dimen/_13pxh"
+                                    android:layout_marginTop="@dimen/_10pxv"
+                                    android:layout_width="@dimen/_19pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_fire"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_fire"/>
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtSportsThree"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_marginEnd="@dimen/_13pxh"
+                                    android:layout_marginStart="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_10pxv"
+                                    android:layout_weight="0.67"
+                                    android:layout_width="0dp"
+                                    android:lineSpacingExtra="@dimen/_3pxh"
+                                    android:singleLine="true"
+                                    android:text="@{mapViewVM.mapViewModel.txtSportsThree}"
+                                    style="@style/txtAirbnbCerealAppbook16_2" tools:text="@string/lbl_food"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <ImageView android:id="@+id/imageVolume"
+                    android:layout_gravity="end"
+                    android:layout_height="@dimen/_46pxh"
+                    android:layout_marginEnd="@dimen/_108pxh"
+                    android:layout_marginStart="@dimen/_108pxh"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="@dimen/_42pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_volume"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_volume"/>
+                <ImageView android:id="@+id/imageReply"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_46pxh"
+                    android:layout_marginEnd="@dimen/_81pxh"
+                    android:layout_marginStart="@dimen/_81pxh"
+                    android:layout_marginTop="@dimen/_27pxv"
+                    android:layout_width="@dimen/_42pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_reply"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_reply"/>
+                <ImageView android:id="@+id/imageVolumeOne"
+                    android:layout_gravity="end"
+                    android:layout_height="@dimen/_46pxh"
+                    android:layout_marginEnd="@dimen/_76pxh"
+                    android:layout_marginStart="@dimen/_76pxh"
+                    android:layout_marginTop="@dimen/_23pxv"
+                    android:layout_width="@dimen/_42pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_volume_white_a700"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_volume_white_a700"/>
+                <ImageView android:id="@+id/imageGroup33513"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_46pxh"
+                    android:layout_marginEnd="@dimen/_123pxh"
+                    android:layout_marginStart="@dimen/_123pxh"
+                    android:layout_marginTop="@dimen/_32pxv"
+                    android:layout_width="@dimen/_42pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_group33513"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_group33513"/>
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_white_a700_border_gray_200_radius_25_5"
+                    android:id="@+id/btnMenu"
+                    android:layout_gravity="end"
+                    android:layout_height="@dimen/_51pxh"
+                    android:layout_marginEnd="@dimen/_25pxh"
+                    android:layout_marginStart="@dimen/_25pxh"
+                    android:layout_marginTop="@dimen/_117pxv"
+                    android:layout_width="@dimen/_51pxh"
+                    android:paddingHorizontal="@dimen/_10pxh"
+                    android:paddingVertical="@dimen/_10pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_menu_indigo_a200" tools:ignore="ContentDescription"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:gravity="start"
+                    android:id="@+id/recyclerMapView"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_13pxh}"
+                    style="@style/groupStyle_2" tools:itemCount="3" tools:listitem="@layout/row_map_view"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>
