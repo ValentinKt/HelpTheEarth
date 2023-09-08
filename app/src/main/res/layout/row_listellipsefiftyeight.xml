@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listellipsefiftyeightRowModel" type="com.seeeeshtheearth.app.modules.invitefriendvone.data.model.ListellipsefiftyeightRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowellipsefiftyeight"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <ImageView android:id="@+id/imageEllipseFiftyEight"
+            android:layout_height="@dimen/_45pxh"
+            android:layout_width="@dimen/_45pxh"
+            android:scaleType="centerCrop" circular="@{true}"
+            imageRes="@{@drawable/img_ellipse58_45x45}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse58_45x45"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnalexlee"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3pxv"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_2pxv"
+            android:layout_weight="0.79" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAlexLee"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listellipsefiftyeightRowModel.txtAlexLee}"
+                style="@style/txtAirbnbCerealAppmedium14_4" tools:text="@string/lbl_alex_lee"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txt2kFollwers"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listellipsefiftyeightRowModel.txt2kFollwers}"
+                style="@style/txtAirbnbCerealAppbook13_2" tools:text="@string/lbl_2k_follwers"/>
+        </LinearLayout>
+        <ImageButton
+            android:background="@drawable/rectangle_bg_indigo_a200_radius_10"
+            android:id="@+id/btnVectorTwoFive"
+            android:layout_height="@dimen/_20pxh"
+            android:layout_marginBottom="@dimen/_13pxv"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="@dimen/_20pxh"
+            android:paddingHorizontal="@dimen/_5pxh"
+            android:paddingVertical="@dimen/_5pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_vector2" tools:ignore="ContentDescription"/>
+    </LinearLayout>
+</layout>

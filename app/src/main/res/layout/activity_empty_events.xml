@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="emptyEventsVM" type="com.seeeeshtheearth.app.modules.emptyevents.data.viewmodel.EmptyEventsVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnarrowleft"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_33pxv"
+        android:layout_marginEnd="@dimen/_24pxh"
+        android:layout_marginStart="@dimen/_24pxh"
+        android:layout_marginTop="@dimen/_4pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:gravity="start"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearTitleBar2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/linearRowarrowleft"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:layout_weight="0.98"
+                    android:layout_width="0dp" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageArrowleft"
+                        android:layout_height="@dimen/_12pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="@dimen/_15pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowleft"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtHelloAshfak"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_weight="0.83"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{emptyEventsVM.emptyEventsModel.txtHelloAshfak}"
+                        style="@style/txtAirbnbCerealAppmedium24" tools:text="@string/lbl_events"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageMorevertical"
+                    android:layout_height="@dimen/_14pxh"
+                    android:layout_marginBottom="@dimen/_9pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_206pxh"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:layout_width="@dimen/_1pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_morevertical"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_morevertical"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearEmptyEvents"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_19pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowupcoming"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyleblack_900_07cornerRadius">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnUpcoming"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginStart="@dimen/_5pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_weight="0.61"
+                    android:layout_width="0dp"
+                    android:lineSpacingExtra="@dimen/_5pxh"
+                    android:paddingBottom="@dimen/_7pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_28pxh"
+                    android:paddingTop="@dimen/_7pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_upcoming"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_4" tools:text="@string/lbl_upcoming"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtFollowing"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_11pxv"
+                    android:layout_marginEnd="@dimen/_31pxh"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_weight="0.39"
+                    android:layout_width="0dp"
+                    android:lineSpacingExtra="@dimen/_5pxh"
+                    android:singleLine="true"
+                    android:text="@{emptyEventsVM.emptyEventsModel.txtFollowing}"
+                    style="@style/txtAirbnbCerealAppbook15_4" tools:text="@string/lbl_past_events"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/imageGroup33596"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_202pxh"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_97pxv"
+                android:layout_width="@dimen/_202pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group33596"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_group33596"/>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtTitle"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_32pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{emptyEventsVM.emptyEventsModel.txtTitle}"
+                style="@style/txtAirbnbCerealAppmedium24_1" tools:text="@string/msg_no_upcoming_eve"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtLanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_9pxh"
+                android:text="@{emptyEventsVM.emptyEventsModel.txtLanguage}"
+                style="@style/txtAirbnbCerealAppbook16_3" tools:text="@string/msg_lorem_ipsum_dol"/>
+            <FrameLayout android:id="@+id/frameButtonColor"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_58pxv"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_154pxv" android:layout_width="@dimen/_271pxh">
+                <LinearLayout android:id="@+id/linearColumnarrowright"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyleindigo_1">
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_indigo_a400_radius_15"
+                        android:id="@+id/btnArrowright"
+                        android:layout_gravity="end"
+                        android:layout_height="@dimen/_30pxh"
+                        android:layout_marginHorizontal="@dimen/_14pxh"
+                        android:layout_marginVertical="@dimen/_14pxv"
+                        android:layout_width="@dimen/_30pxh"
+                        android:paddingHorizontal="@dimen/_8pxh"
+                        android:paddingVertical="@dimen/_8pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_arrowright" tools:ignore="ContentDescription"/>
+                </LinearLayout>
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtLanguageOne"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_18pxv"
+                    android:layout_marginEnd="@dimen/_40pxh"
+                    android:layout_marginStart="@dimen/_40pxh"
+                    android:layout_marginTop="@dimen/_18pxv"
+                    android:layout_width="match_parent"
+                    android:letterSpacing="0.05"
+                    android:singleLine="true"
+                    android:text="@{emptyEventsVM.emptyEventsModel.txtLanguageOne}"
+                    android:textAllCaps="true"
+                    style="@style/txtAirbnbCerealAppmedium16_1" tools:text="@string/lbl_explore_events"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
